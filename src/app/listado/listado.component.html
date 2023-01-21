@@ -4,9 +4,14 @@
 
 </ul>
 
-<div *ngIf="globalHeroErased != ''">
+<div *ngIf="globalHeroErased != ''; else replacementTemplate">
     <span>Heroe borrado: {{globalHeroErased}}</span>
 </div>
+
+<ng-template #replacementTemplate>
+    <h1> No se ha borrado nada </h1>
+</ng-template>
+
 
 <button (click)="borrarHeroe()">
     Borrar heroe
