@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'app-contadpr',
+  selector: 'app-contador',
   template: `
         <div>
             <h1>{{title}}</h1>
@@ -33,6 +33,7 @@ import { Component } from '@angular/core';
   `
 })
 export class ContadorComponent {
+  
   title = 'Contador App';
   numero: number = 10;
 
